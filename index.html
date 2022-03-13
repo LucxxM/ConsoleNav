@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sectionNav" id="Start1">
+        <h1>Navigation like console</h1>
+        <button onclick="openIt()" id="btnToggle">Open a new Navigation Console</button>
+        <div class="big-box">
+            <div class="navbar display-none" role="navigation" id="navbar">
+                <div class="navbar-head">
+                    <p>New Navigation open</p>
+                    <div class="closing-div" onclick="closeIt()">x</div>
+                </div>
+                <div class="navbar-title">
+                    <p>PS App:<code>\</code>Portofolio<code>\</code>Navbar<code>\</code>Console<code>></code><span>select a section</span><div class="fake-insert" id="fake-insert1"></div></p>
+                </div>
+                <div class="navbar-body" id="toggle-part-div">
+                    <div class="navbar-div" onclick="toggleMyPart()" data-link="#home1" id="Home"><span>[</span>Home<span>]</span></div>
+                    <div class="navbar-div"><code>||</code></div>
+                    <div class="navbar-div" onclick="toggleMyPart()" data-link="#about1" id="About"><span>[</span>About<span>]</span></div>
+                    <!-- <a href="#about1">about</a> -->
+                    <div class="navbar-div"><code>||</code></div>
+                    <div class="navbar-div" onclick="toggleMyPart()" data-link="#projects1" id="Projects"><span>[</span>Projects<span>]</span></div>
+                    <!-- <a href="#projects1">projects</a> -->
+                    <div class="navbar-div"><code>||</code></div>
+                    <div class="navbar-div" onclick="toggleMyPart()" data-link="#contact1" id="Contact"><span>[</span>Contact<span>]</span></div>
+                    <!-- <a href="#contact1">contact</a> -->
+                    <div class="navbar-div"><code>||</code></div>
+                    <div class="navbar-div" onclick="toggleMyPart()" data-link="#somefun1" id="Somefun"><span>[</span>SomeFun<span>]</span></div>
+                    <!-- <a href="#somefun1">Home</a> -->
+                </div>
+            </div>
+            <div class="navbar display-none" role="navigation" id="toggle-part">
+                <div class="navbar-title">
+                    <p>PS App:\Portofolio\Navbar\Console\<code>></code><span>welcome to </span><div class="fake-insert display-none" id="fake-insert2"></div></p>
+                </div>
+                <div class="navbar-body columnMe margeThis">
+                    <div class="text-place__div">
+                        <div class="navbar-divTest"><span>[</span><div class="navbar-divTest" data-text="Home" id="textPlace">running</div><span>]</span><code>=></code> <div class="fake-insert" id="fake-insert3"></div></div>
+                    </div>
+                    <div>
+                        <div class="navbar-divTest" onclick="toggleTextPlace()" id="Home"><span>[</span><div class="navbar-divTest">Home</div><span>]</span></div>
+                        <div class="navbar-divTest" onclick="toggleTextPlace()" id="About"><span>[</span><div class="navbar-divTest">About</div><span>]</span></div>
+                        <div class="navbar-divTest" onclick="toggleTextPlace()" id="Projects"><span>[</span><div class="navbar-divTest">Projects</div><span>]</span></div>
+                        <div class="navbar-divTest" onclick="toggleTextPlace()" id="Contact"><span>[</span><div class="navbar-divTest">Contact</div><span>]</span></div>
+                        <div class="navbar-divTest" onclick="toggleTextPlace()" id="Somefun"><span>[</span><div class="navbar-divTest">SomeFun</div><span>]</span></div>
+    
+                    </div>
+                    <div class="navbar-div" onclick="toggleMyPart()" id="Start"><span>[</span>Back<span>]</span></div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="section home" id="Home1">
+        <h2>HOME</h2>
+        
+    </section>
+    <section class="section about" id="About1">
+        <h2>ABOUT</h2>
+        
+    </section>
+    <section class="section projects" id="Projects1">
+        <h2>PROJECTS</h2>
+        
+    </section>
+    <section class="section contact" id="Contact1">
+        <h2>CONTACT</h2>
+        
+    </section>
+    <section class="section somefun" id="Somefun1">
+        <h2>SOME FUN</h2>
+        
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
