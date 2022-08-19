@@ -55,7 +55,7 @@ function openIt() {
 function  toggleTextPlace(){
   textPlace.setAttribute("data-text", "[" + this.id + "]....");
 
-  window.location.href = "http://127.0.0.1:5500/index.html#"+this.id+"1";
+  window.location.href = "https://lucxxm.github.io/ConsoleNav/#"+this.id+"1";
 }
 
 document.querySelectorAll("div.navbar-divTest").forEach(function (link) {
